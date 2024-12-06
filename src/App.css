@@ -1,0 +1,376 @@
+/*******************LOGO*********************/
+.logo {
+  height: 70px;
+}
+
+/*********************Up**********************/
+.up {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+
+  nav {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+  }
+}
+
+/********************Product card**************/
+.product-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-card h2 {
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-card p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #555;
+}
+
+.product-card a {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  color: black;
+}
+
+/*****************Product List***********/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+
+/**************************Footer*********/
+
+.footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ccc;
+}
+
+.footer p {
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/**************detalle de producto en la vista del cliente**************************************/
+
+.product-details-client-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+
+  img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+  }
+}
+
+.product-details-client a {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.product-details-client a:hover {
+  color: blue;
+}
+
+/************************Por categoria en la vista del cliente*******************/
+
+.product-list-by-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+/***************************Fin de vista cliente/********************************/
+
+/***************************vista de administrador/********************************/
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+
+  img {
+    width: 320px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin: 15px 0;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #333;
+  }
+
+  p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #555;
+  }
+}
+a {
+  margin: 15px 0;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+/******************************vista del admin pagina principal**********************/
+.adminView {
+  h1 {
+    text-align: center;
+  }
+  a {
+    margin-left: 20px;
+  }
+}
+
+/**************************boton editar**********************************************/
+.editar {
+  margin-left: 10px;
+  background-color: rgb(67, 67, 181);
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.editar:hover {
+  background-color: rgb(139, 139, 236);
+}
+
+/***************************boton eliminar*********************************************/
+.eliminar {
+  margin-left: 10px;
+
+  background-color: #d32f2f;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.eliminar:hover {
+  background-color: #f44336;
+}
+
+/*******************************newproduct formulario*******************************/
+.newProduct {
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  div {
+    margin-bottom: 15px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  textarea {
+    resize: vertical;
+    height: 80px;
+  }
+}
+
+.newProduct .newProduct input,
+.newProduct textarea,
+.newProduct select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+.newProduct .newProduct button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newProduct button:hover {
+  background-color: blue;
+}
+
+/***********************editProduct formulario******************/
+.editProduct {
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.editProduct h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.editProduct form {
+  display: flex;
+  flex-direction: column;
+}
+
+.editProduct div {
+  margin-bottom: 15px;
+}
+
+.editProduct label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.editProduct input,
+.editProduct textarea,
+.editProduct select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+
+.editProduct textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.editProduct button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.editProduct button:hover {
+  background-color: #444;
+}
