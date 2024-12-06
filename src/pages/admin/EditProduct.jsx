@@ -11,11 +11,11 @@ const EditProduct = () => {
   const [precio, setPrecio] = useState("");
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  const baseUrl = process.env.REACT_APP_API_BASE_URL;
 
   useEffect(() => {
     const fetchProductData = async () => {
       try {
+        const baseUrl = process.env.REACT_APP_API_BASE_URL;
         const response = await fetch(`${baseUrl}/api/products/${id}`);
         if (!response.ok) {
           throw new Error("Error al obtener el producto");
