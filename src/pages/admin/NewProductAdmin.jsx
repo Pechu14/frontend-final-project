@@ -41,7 +41,7 @@ const NewProduct = () => {
         throw new Error("Error al crear el producto");
       }
 
-      const data = await response.json();
+      await response.json();
       navigate("/administrador");
     } catch (err) {
       setError(err.message);
