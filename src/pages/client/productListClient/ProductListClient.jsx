@@ -69,6 +69,21 @@ const ProductListClient = () => {
           >
             Accesorios
           </Button>
+          <Button
+            variant="contained"
+            color=""
+            component={Link}
+            to="/administrador"
+            sx={{
+              backgroundColor: "grey",
+              color: "black",
+              "&:hover": {
+                color: "blue",
+              },
+            }}
+          >
+            Administrador
+          </Button>
         </nav>
       </div>
       <div className="product-list-client">
