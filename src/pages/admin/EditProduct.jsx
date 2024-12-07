@@ -34,6 +34,7 @@ const EditProduct = () => {
   }, [id]);
 
   const handleSubmit = async (e) => {
+    const baseUrl = process.env.REACT_APP_API_BASE_URL;
     e.preventDefault();
 
     if (!nombre || !descripcion || !categoria || !talla || !precio) {
